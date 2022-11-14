@@ -1,1 +1,0 @@
-{"uuid":"2a0d527e-bbce-4be2-8e9a-ab0ede1a1c62","name":"com.kaiming.learn.citest.TestAnnotation.beforeMethodTest","description":"","start":1668407511387,"stop":1668407511390,"children":["1e3d0c0f-7f01-48af-a067-a200db267e0e"],"befores":[{"name":"beforeMethodTest","status":"passed","stage":"finished","description":"","start":1668407511387,"stop":1668407511387}]}

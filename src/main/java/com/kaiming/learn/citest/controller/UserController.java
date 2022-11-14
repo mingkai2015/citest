@@ -13,9 +13,13 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/getUserName")
+    @GetMapping("/getName1")
     public String getUserName(){
-        return userService.getName();
+        return userService.getName1();
+    }
+    @GetMapping("/getName2")
+    public String getUserName2(){
+        return userService.getName2();
     }
 
 }

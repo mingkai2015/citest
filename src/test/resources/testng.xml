@@ -4,14 +4,9 @@
     <!--<test verbose="2" preserve-order="true" name="test">-->
     <test name="test">
         <classes>
-            <class name="com.kaiming.learn.citest.TestAnnotation"/>
-        </classes>
-    </test>
-    <test name="test2">
-        <classes>
-            <class name="com.kaiming.learn.citest.TestAnnotationB">
+            <class name="com.kaiming.learn.citest.TestAnnotation">
                 <methods>
-                    <include name="testb"/>  <!--指定要运行的方法-->
+                    <include name="test1"/>  <!--指定要运行的方法-->
                 </methods>
             </class>
         </classes>

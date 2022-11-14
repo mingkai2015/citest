@@ -1,46 +1,24 @@
 package com.kaiming.learn.citest;
 
-import org.testng.annotations.*;
+import com.kaiming.learn.citest.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Test;
-public class TestAnnotation {
-    @Test
-    public  void test(){
-        System.out.println("TestAnnotation.test");
-        System.out.println("线程ID：" + Thread.currentThread().getId());
-    }
+
+@SpringBootTest
+public class TestAnnotation extends AbstractTestNGSpringContextTests {
+
+    @Autowired
+    private UserService service;
 
     @Test
-    public  void test2(){
-        System.out.println("TestAnnotation.test2");
+    public void test1(){
+        System.out.println(service.getName1());
     }
 
-    @BeforeMethod
-    public void beforeMethodTest(){
-        System.out.println("TestAnnotation.beforeMethodTest");
-    }
-
-    @AfterMethod
-    public void afterMethodTest(){
-        System.out.println("TestAnnotation.afterMethodTest");
-    }
-
-    @BeforeClass
-    public void beforeClassTest(){
-        System.out.println("TestAnnotation.beforeClassTest");
-    }
-
-    @AfterClass
-    public void afterClassTest(){
-        System.out.println("TestAnnotation.afterClassTest");
-    }
-
-    @BeforeSuite
-    public void beforeSuiteTest(){
-        System.out.println("TestAnnotation.beforeSuiteTest");
-    }
-
-    @AfterSuite
-    public void afterSuiteTest(){
-        System.out.println("TestAnnotation.afterSuiteTest");
+    @Test
+    public void test2(){
+        System.out.println(service.getName2());
     }
 }
