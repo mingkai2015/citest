@@ -14,9 +14,17 @@
         <fileSet>
             <directory>src/main/resources</directory>
             <outputDirectory>conf</outputDirectory>
-            <excludes>
-                <exclude>assembly.xml</exclude>
-            </excludes>
+            <includes>
+                <include>*.properties</include>
+            </includes>
+        </fileSet>
+        <!--script配置-->
+        <fileSet>
+            <directory>src/main/resources/script</directory>
+            <outputDirectory>script</outputDirectory>
+            <includes>
+                <include>*.bat</include>
+            </includes>
         </fileSet>
         <!--main jar-->
         <fileSet>
